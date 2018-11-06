@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Webinar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style/normalize.css">
+	<link rel="stylesheet" href="style/main.css">
+	<script defer src="js/showDiv.js"></script>
+</head>
+<body>
+
+	<div class="pre-header">
+		<div class="pre-header__wrapper">
+
+			<a href="#" class="pre-header__logo">
+				<img src="image/veeam_logo_lp.svg" alt="Veeam" class="pre-header__logo-image">
+			</a>
+
+			<div class="pre-header__slogan">
+				<img src="image/slogan_lp.svg" alt="slogan" class="pre-header__slogan-image">
+			</div>
+			
+			<div class="burger">
+				<input type="checkbox" id="burger">
+		        <label for="burger"></label>
+		        
+		        <div class="burger-line first"></div>
+		        <div class="burger-line second"></div>
+		        <div class="burger-line third"></div>
+		        <div class="burger-line fourth"></div>
+		      
+		        <nav class="main-menu">
+		            <a href="#description" class="main-menu__item">Description</a>
+		            <a href="#speakers" class="main-menu__item">Speakers</a>
+		            <a href="#form" class="main-menu__item">Register</a>
+		        </nav>
+			</div> 
+		</div>
+	</div>
+	
+	<div class="header">
+		<div class="header__wrapper">
+			<p class="header__intro">
+				Live Webinar
+			</p>
+			<h1 class="header__title">
+				Veeam Virtual Labs: </br>Beginner to Advanced
+			</h1>
+			<button class="form__button" type="submit"><a class="form__button-link" href="#form__register">Register now</a></button>
+		</div>
+	</div>
+	
+	<main>
+		<div class="wrapper">
+			<div class="main-container">
+				<div class="main-container__left">
+					
+					<div class="description" id="description">
+						<div class="date">
+							Thursday, June 22  <span>|</span> 
+							12 p.m. CET / 11:00 a.m. GMT
+						</div>
+						<p class="description__first">
+							The Veeam Virtual Lab has come a long way over the years. Whether it is the ability to go into production changes with complete confidence, testing upgrades of multi-tiered applications or security testing without risk, the virtual lab is the right tool for the job!
+						</p>
+						<p class="description__second">
+							Join this webinar and learn some expert tips and use cases for using the virtual lab for backups, replicas and storage snapshots to get the highest levels of Availability.
+						</p>
+					</div>
+
+					<div class="speakers" id="speakers">
+						<h2 class="speakers__title">
+							Featured speakers:
+						</h2>
+						<div class="speakers__wrapper">
+
+							<div class="speakers__item">
+								<img src="image/speaker-Stefan.png" alt="" class="speakers__img">
+								<div class="speakers__wrap">
+									<h3 class="speakers__item-title">
+										Stefan Renner
+									</h3>
+									<div class="speakers__item-desc">
+										EMEA Alliance Systems Engineer,</br> Veeam Software
+									</div>
+								</div>
+							</div>
+
+							<div class="speakers__item">
+								<img src="image/speaker-Oliver.png" alt="" class="speakers__img">
+								<div class="speakers__wrap">
+									<h3 class="speakers__item-title">
+										Oliver Hansel
+									</h3>
+									<div class="speakers__description">
+										Solution Architect, </br> NetApp
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="main-container__right">
+					<div class="form-wrapper">
+
+						<form class="form" id="form">
+							<div class="row">
+								<h2 class="form-head">Register to attend</h2>
+
+								<div class="form__row">
+									<input type="text" name="first_name" class="form__item" maxlength="30" placeholder="First name *">
+								</div>	
+
+								<div class="form__row">
+									<input type="text" name="last_name" class="form__item" maxlength="30" placeholder="Last name *">
+								</div>
+
+								<div class="form__row">
+									<input type="text" name="email" class="form__item" maxlength="50" placeholder="Business email *">
+								</div>
+
+								<div class="form__row" >
+									<select id="country" class="form__item select">
+										<option value="" class="form__option">Select country / region</option>
+										<option value="USA" class="form__option">United States</option>
+										<option value="VIR" class="form__option">Virgin Islands, U.S.</option>
+										<option value="GBR" class="form__option">United Kingdom</option>
+							    	</select>  
+								</div>
+
+								<div id="state-select" style="display:none">
+										<select id="state" class="form__item select">
+											<option value="" class="form__option">Select state</option>
+											<option value="NY" class="form__option">New York</option>
+											<option value="AK" class="form__option">Alaska</option>
+											<option value="FL" class="form__option">Florida</option>
+											<option value="MA" class="form__option">Massachusetts</option>
+											<option value="CA" class="form__option">California</option>
+								    	</select>
+								</div>
+								<button class="form__button" type="submit" id="form__register">Register now</button>
+							</div>
+						</form>				
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__copyright">
+			© 2018 Veeam<sup>®</sup> Software. 
+			Privacy Policy & Cookies
+		</div>
+	</footer>
+
+</body>
+</html>
